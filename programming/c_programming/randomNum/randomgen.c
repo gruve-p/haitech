@@ -1,0 +1,18 @@
+// author: Hai Phan
+// date: 18-01-2013
+// print 10 random numbers
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main() {
+  int c, n;
+  srand(time(NULL));
+  printf("Ten random numbers in [1,100]\n");
+ 
+  for (c = 1; c <= 10; c++) {
+    n = rand()%100 + 1;
+    printf("%d\n", n);
+  }
+ 
+  return 0;
+}
