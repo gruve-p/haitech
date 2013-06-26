@@ -1,0 +1,5 @@
+Implement a class that does string manipulation by overloading the following operators: <<, >>, = and ==.  For example consider the following code:
+StrShift example;
+example = “Microsoft”;
+printf(“\”example << 2\” results in %s\n“, example << 2);
+In the above code the output would be “ftMicroso” which shows the last two characters of the string “Microsoft” rotated to the left of the string.  Please note that state is maintained so two calls of example << 1 would give the same end result as calling example << 2 once.
