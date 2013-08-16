@@ -1,0 +1,9 @@
+Implement the AES-128 block cipher encryption function.
+The official specifications of AES
+are available in FIPS Publication 197. You need to implement encryption with a 128-bit key
+only. Parts of the code (S-box and round constant tables, xtime() macro for multiplication
+in GF(2^8)) are already provided in aes128e.c.
+
+The appendices of the specifications include test vectors that you can use for debugging.
+The first input set used by the provided driver (aes128e_driver.c) is the one given in
+Appendix A.1 and B. 
