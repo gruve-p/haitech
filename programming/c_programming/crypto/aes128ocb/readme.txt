@@ -1,0 +1,5 @@
+Implement offset code book (OCB) mode for AES-128 block cipher. Reuse your AES-128 encryption code from Assignment 1. You should follow the OCB specifications from IETF Working Draft "The OCB Authenticated-Encryption Algorithm". You need to implement the OCB-ENCRYPT function from the specifications (AEAD_AES_128_OCB_TAGLEN128) with the following simplifications: 
+Associated data is always empty (and not even given to the function as an input). Hence, HASH(K,A)=0. 
+The length of the nonce is fixed to 12 bytes (96 bits). 
+The length of the plaintext is always a multiple of the block size (16 bytes). Hence, you don't have to process any final partial blocks. 
+The number of plaintext blocks is limited to fit in one unsigned int. You can use the provided functions to determine the number of trailing zeros and the exponent of the msb (use this to determine the maximum number of trailing zeros) of a value (unsigned int).  
